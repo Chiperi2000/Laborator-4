@@ -6,21 +6,18 @@
 
 import random
 
-x = random.randint(0,100)
+numar_generat = random.randint(0,100)
+numar_introdus = int(input("Ghiceste un numar intre 0 si 100: "))
+incercari = 0
 
-y = int(input("Introduceti un numar intre 0 si 100: "))
-incercari = 1
+while numar_introdus != numar_generat:
+    if numar_generat > numar_introdus:
+        print("Numarul introdus este prea mic!")
+        numar_introdus = int(input("Incearca din nou: "))
+        incercari = incercari + 1
+    elif numar_generat < numar_introdus:
+        print("Numarul introdus este prea mare!")
+        numar_introdus = int(input("Incearca din nou: "))
+        incercari = incercari + 1
 
-while y != x:
-    print("Nu ati ghicit numarul!")
-    if y < x:
-        print("Numarul introdus este prea mic.")
-        y = int(input("introduceti alt numar: "))
-        incercari += 1
-    if y > x:
-        print("Numarul introdus este prea mare")
-        y = int(input("Introduceti alt numar: "))
-        incercari += 1
-    else:
-        print("Ati ghicit corect!\nNumarul este",y,end = '!\n')
-        print("Ati ghicit in",incercari,"incercari")
+print("Ai ghicit numarul!\nNumar de incercari:",incercari)

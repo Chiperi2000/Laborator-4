@@ -1,4 +1,4 @@
-#Scrieți un program care va cere utilizatorului să introducă o parolă pentru a merge mai departe!
+#Scrieți un program care va cere utilizatorului să introducă o parolă pentru a merge mai departe! 
 
 print("Creare parola: ")
 parola_1 = input("Introduceti parola: ")

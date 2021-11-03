@@ -3,7 +3,7 @@
 #Exemplu (6 caramizi) - constructie de sus in jos:
 # - primul etaj este format din o caramida: 6-1 => mai raman 5 caramizi
 # - al doilea etaj este format din 2 caramizi: 5-2 => mai raman 3 caramizi
-# - al treilea etaj este format din 3 caramizi: 3-3 => mai raman 0 caramizi 
+# - al treilea etaj este format din 3 caramizi: 3-3 => mai raman 0 caramizi  
 
 
 caramizi = int(input("Introduceti numarul de caramizi: "))
